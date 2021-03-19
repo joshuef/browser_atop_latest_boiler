@@ -1,0 +1,15 @@
+module.exports = {
+  $App: './src',
+  $Test: './__tests__',
+  $Actions: './src/actions',
+  $BuilderConfig: './builderConfig.js',
+  $Store: './src/store',
+  $Extensions: './src/extensions',
+  $Reducers: './src/reducers',
+  $Logger: './src/logger.ts',
+  $Components: './src/components',
+  $Constants: './src/constants.ts',
+  $Package: './package.json',
+  $Utils: './src/utils',
+  $TestCafeHelpers: './__testcafe__/helpers.js',
+};

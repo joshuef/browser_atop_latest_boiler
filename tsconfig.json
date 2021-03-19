@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "jsx": "react",
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true
+  },
+  "paths": {
+    "*": ["src/definitions"],
+    "$App/*": ["src/*"],
+    "$Tests/*": ["__tests__/*"],
+    "$BuilderConfig": ["builderConfig.js"],
+    "$Actions/*": ["src/actions/*"],
+    "$Store/*": ["src/store/*"],
+    "$Extensions/*": ["src/extensions/*"],
+    "$Reducers/*": ["src/reducers/*"],
+    "$Logger": ["src/logger.ts"],
+    "$Components/*": ["src/components/*"],
+    "$Constants": ["src/constants.ts"],
+    "$Utils/*": ["src/utils/*"],
+    "$Package": ["package.json"],
+    "$TestCafeHelpers": ["__testcafe__/helpers.js"]
+},
+  "exclude": [
+    "test",
+    "release",
+    "src/main.prod.js",
+    "src/renderer.prod.js",
+    "src/dist",
+    ".erb/dll"
+  ]
+}

@@ -1,0 +1,52 @@
+/* @import '../Tab/tab.css' */
+
+.container {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: block;
+    box-sizing: border-box;
+    border-right: 0;
+    overflow-x: hidden;
+}
+
+.page {
+    background-color: #fff;
+    min-height: auto; /* override nessie 100vh */
+}
+
+.tab {
+    /* stylelint-disable-next-line property-no-unknown  */
+    composes: tab from '../../Tab/tab.css';
+}
+
+.activeTab {
+    /* stylelint-disable-next-line property-no-unknown  */
+    composes: activeTab from '../../Tab/tab.css';
+}
+
+.table {
+    max-width: 800px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    align-content: center;
+    box-sizing: border-box;
+    border-right: 0;
+    margin: 0 auto;
+}
+
+.date {
+    margin: 0 auto;
+}
+
+.item {
+    display: inline;
+}
+
+.url {
+    padding-left: 15px;
+}
+
+.timeStamp {
+    opacity: 0.5;
+}
